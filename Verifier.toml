@@ -1,0 +1,13 @@
+# Verifier.toml for ZK Private Airdrop Claim Proof
+
+# === Public Inputs ===
+# These MUST match the public inputs in Prover.toml (after recomputation of hashes).
+
+recipient_address = "0xRecipientAddressForAirdrop"
+claim_epoch = "20240723"
+criteria_commitment = "hash_of_airdrop_eligibility_rules"
+
+# !!! CRITICAL: These hash values are PLACEHOLDERS.
+# Must match recomputed values from Prover.toml.
+claimed_eligibility_proof_commitment = "505050..." # PLACEHOLDER - MUST MATCH PROVER'S RECOMPUTED VALUE
+claimed_claim_nullifier = "606060..."              # PLACEHOLDER - MUST MATCH PROVER'S RECOMPUTED VALUE

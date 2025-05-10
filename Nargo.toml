@@ -1,0 +1,8 @@
+[package]
+name = "noir_private_airdrop_claim"
+type = "bin"
+authors = ["DAppDevMaster"]
+compiler_version = ">=0.20.0" # Adjust if necessary
+
+[dependencies]
+noir_stdlib = { tag = "v0.6.0", git = "https://github.com/noir-lang/noir-libs/" , directory="stdlib"}

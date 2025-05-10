@@ -1,0 +1,22 @@
+# Prover.toml for ZK Private Airdrop Claim Proof
+
+# === Private Inputs ===
+eligibility_secret = "SecretKeyThatInteractedWithOldContract"
+airdrop_id = "awesome_airdrop_round_1"
+
+# === Public Inputs ===
+recipient_address = "0xRecipientAddressForAirdrop" # User's desired recipient address
+claim_epoch = "20240723"
+
+# This would be a known public value for the airdrop campaign.
+# e.g., hash("0xTargetContractAddress", "5_interactions_minimum")
+criteria_commitment = "hash_of_airdrop_eligibility_rules" 
+
+# !!! CRITICAL: The hash values below are PLACEHOLDERS.
+# You MUST recompute these using the actual private inputs and the pedersen_hash logic from src/main.nr.
+
+# claimed_eligibility_proof_commitment = pedersen_hash(["SecretKeyThatInteractedWithOldContract", "awesome_airdrop_round_1", "hash_of_airdrop_eligibility_rules"])
+claimed_eligibility_proof_commitment = "505050..." # PLACEHOLDER - RECOMPUTE
+
+# claimed_claim_nullifier = pedersen_hash(["SecretKeyThatInteractedWithOldContract", "awesome_airdrop_round_1", "20240723"])
+claimed_claim_nullifier = "606060..." # PLACEHOLDER - RECOMPUTE
