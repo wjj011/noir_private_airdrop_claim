@@ -1,7 +1,7 @@
 [package]
 name = "noir_private_airdrop_claim"
 type = "bin"
-authors = ["DAppDevMaster"]
+authors = ["AirdropPrivaSeal"]
 compiler_version = ">=0.20.0" # Adjust if necessary
 
 [dependencies]
